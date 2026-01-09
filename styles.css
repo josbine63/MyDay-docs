@@ -48,6 +48,19 @@ body {
     align-items: center;
 }
 
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
 .nav-brand h1 {
     font-size: 1.5rem;
     font-weight: 600;
@@ -77,6 +90,24 @@ body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     text-align: center;
+}
+
+.hero-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.hero-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 27px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.hero-icon:hover {
+    transform: scale(1.05);
 }
 
 .hero-title {
@@ -110,7 +141,9 @@ body {
 
 /* Buttons */
 .btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     padding: 14px 32px;
     border-radius: 12px;
     text-decoration: none;
@@ -119,6 +152,11 @@ body {
     transition: all 0.3s ease;
     border: none;
     cursor: pointer;
+}
+
+.btn-icon {
+    width: 20px;
+    height: 20px;
 }
 
 .btn-primary {
@@ -400,6 +438,11 @@ section {
         font-size: 1.25rem;
     }
     
+    .hero-icon {
+        width: 100px;
+        height: 100px;
+    }
+    
     .section-title {
         font-size: 2rem;
     }
@@ -437,6 +480,11 @@ section {
     
     .hero-title {
         font-size: 2rem;
+    }
+    
+    .hero-icon {
+        width: 80px;
+        height: 80px;
     }
     
     section {
