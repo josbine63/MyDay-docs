@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MyDay - iOS app for daily tracking with integration of your Activity data, Photos, Calendars, Reminders, and iCloud synchronization">
-    <meta name="keywords" content="MyDay, iOS, app, daily tracking, health, photos, calendar, reminders, iCloud">
+    <meta name="description" content="MyDay - iOS app for daily tracking with integration of your Activity data, Photos, Calendars, Reminders, Daily Quote, Horoscope, and iCloud synchronization">
+    <meta name="keywords" content="MyDay, iOS, app, daily tracking, health, photos, calendar, reminders, horoscope, daily quote, iCloud">
     <meta name="author" content="MyDay">
     <title>MyDay - Your day, simply organized</title>
     <link rel="stylesheet" href="../styles.css">
@@ -39,7 +39,7 @@
             <p class="hero-subtitle">Your day, simply organized</p>
             <p class="hero-description">
                 An intuitive iOS app that centralizes your activity data, photos, calendars, and reminders.
-                Track your daily life and stay synchronized across all your devices with iCloud.
+                Enrich your daily life with a quote of the day and a horoscope. Everything stays on your devices, synced via iCloud.
             </p>
             <div class="hero-buttons">
                 <a href="#" class="btn btn-primary">
@@ -59,39 +59,75 @@
             <h2 class="section-title">Key Features</h2>
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">💪</div>
-                    <h3>Activity Tracking</h3>
-                    <p>Access your physical activity data directly from the app. Track your steps, calories, and distance.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">📸</div>
-                    <h3>Photos Integration</h3>
-                    <p>Browse your photos easily. Access your albums and relive your best moments directly from the app.</p>
-                </div>
-                
-                <div class="feature-card">
                     <div class="feature-icon">📅</div>
                     <h3>Calendars</h3>
-                    <p>View all your events and appointments at a glance. Stay organized with a clear view of your schedule.</p>
+                    <p>View all your events and appointments at a glance. Choose exactly which calendars to display. MyDay never creates, modifies, or deletes any event.</p>
                 </div>
-                
+
                 <div class="feature-card">
                     <div class="feature-icon">✅</div>
                     <h3>Reminders</h3>
-                    <p>Manage your daily tasks and reminders. Never miss an important deadline with smart notifications.</p>
+                    <p>Manage your daily tasks with fine-grained selection of your reminder lists. Mark reminders as completed directly from the app.</p>
                 </div>
-                
+
+                <div class="feature-card">
+                    <div class="feature-icon">💪</div>
+                    <h3>Activity Tracking</h3>
+                    <p>Enable it at your own pace in Settings. Track your steps, distance, and calories burned. MyDay never modifies any Health data.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📸</div>
+                    <h3>Photos</h3>
+                    <p>Enable photo display on your home screen. Choose the album of your choice and browse your memories. No photo is ever modified or deleted.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">💭</div>
+                    <h3>Quote of the Day</h3>
+                    <p>An inspiring quote every morning, automatically translated to match your device language. Enable it in Settings.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔮</div>
+                    <h3>Daily Horoscope</h3>
+                    <p>Read your horoscope for the day based on your zodiac sign. Choose from multiple sources and check the reference for each. Enable in Settings.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔗</div>
+                    <h3>Custom Links</h3>
+                    <p>Associate Shortcuts links with your events or reminders. A simple tap on an agenda item opens the desired action directly.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📆</div>
+                    <h3>Week View</h3>
+                    <p>Check your schedule for the next 7 days from your home screen. A quick view to plan your week ahead.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Shared Calendars</h3>
+                    <p>Events from shared calendars or lists are automatically identified with a sharing icon, giving you a clear view of your group commitments.</p>
+                </div>
+
                 <div class="feature-card">
                     <div class="feature-icon">☁️</div>
                     <h3>iCloud Sync</h3>
-                    <p>Your data is automatically synchronized across all your Apple devices. Access your information wherever you are.</p>
+                    <p>Your data is automatically synchronized across all your Apple devices. Custom links, preferences — everything stays in sync.</p>
                 </div>
-                
+
                 <div class="feature-card">
                     <div class="feature-icon">🔒</div>
                     <h3>Privacy Guaranteed</h3>
-                    <p>Your data remains private and secure. No collection, no sharing with third parties. Everything stays on your devices.</p>
+                    <p>Your data remains private. No collection, no sharing with third parties. Permissions are only requested when you choose to.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>Full Control</h3>
+                    <p>Every feature is toggled on or off at your choice. Photos, Health, Quote of the Day, Horoscope — everything is in your hands.</p>
                 </div>
             </div>
         </div>
@@ -109,47 +145,46 @@
                         <p>Install MyDay from the App Store on your iPhone or iPad. The app requires iOS 17.0 or later.</p>
                     </div>
                 </div>
-                
+
                 <div class="step">
                     <div class="step-number">2</div>
                     <div class="step-content">
-                        <h3>Grant permissions</h3>
-                        <p>On first launch, grant permissions for Activity (Steps, Distance, and Calories), Photos, Calendars, and Reminders. These permissions are necessary to fully enjoy the app.</p>
+                        <h3>Allow Calendar and Reminders</h3>
+                        <p>On first launch, the app requests access to your Calendars and Reminders. Before each permission, an explanation is shown to tell you why that access is needed. iOS does not offer read-only access to Calendar, but MyDay will never create or modify any event or reminder.</p>
                     </div>
                 </div>
-                
+
                 <div class="step">
                     <div class="step-number">3</div>
                     <div class="step-content">
-                        <h3>Enable iCloud</h3>
-                        <p>Make sure iCloud is enabled on your devices to benefit from automatic data synchronization.</p>
+                        <h3>Choose your calendars and reminders</h3>
+                        <p>In Settings, select exactly which calendars and reminder lists you want displayed on your home screen.</p>
                     </div>
                 </div>
-                
+
                 <div class="step">
                     <div class="step-number">4</div>
                     <div class="step-content">
-                        <h3>Customize your experience</h3>
-                        <p>Explore the app settings to customize the display and notifications according to your preferences.</p>
+                        <h3>Enable optional features</h3>
+                        <p>In Settings, you can activate at your own pace: <strong>Photos</strong> (with album selection), <strong>Activity data</strong> (steps, distance, calories), <strong>Quote of the Day</strong>, and <strong>Daily Horoscope</strong>. Each activation is preceded by a clear explanation.</p>
                     </div>
                 </div>
 
                 <div class="step">
                     <div class="step-number">5</div>
                     <div class="step-content">
-                        <h3>Choose your calendars</h3>
-                        <p>Select which calendars you want to display in the app to keep track of your important events.</p>
+                        <h3>Create custom links</h3>
+                        <p>In Settings → Custom Links, associate Shortcuts with your recurring events or reminders. A tap on the item in your agenda launches the action directly.</p>
                     </div>
                 </div>
 
                 <div class="step">
                     <div class="step-number">6</div>
                     <div class="step-content">
-                        <h3>Choose your reminder lists</h3>
-                        <p>Select which reminder lists you want to see to stay on top of your tasks.</p>
+                        <h3>Enable iCloud (optional)</h3>
+                        <p>If you use multiple Apple devices, make sure iCloud is enabled to automatically sync your preferences and custom links.</p>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -165,32 +200,67 @@
                         <p>MyDay requires iOS 17.0 or later. The app is compatible with iPhone and iPad.</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-item">
                     <h3 class="faq-question">Is my data secure?</h3>
                     <div class="faq-answer">
                         <p>Absolutely. All your data stays on your devices and in your personal iCloud. We don't collect, store, or share any of your personal information.</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-item">
                     <h3 class="faq-question">Is the app free?</h3>
                     <div class="faq-answer">
-                        <p>No, MyDay costs $1 USD but is ad-free with no in-app purchases. Enjoy all features without hidden fees.</p>
+                        <p>MyDay costs $1 USD but is entirely ad-free with no in-app purchases. All features are included.</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-item">
                     <h3 class="faq-question">Can I use the app without iCloud?</h3>
                     <div class="faq-answer">
-                        <p>Yes, the app works without iCloud, but you'll lose automatic synchronization between your devices. Your data will remain stored locally on each device.</p>
+                        <p>Yes, the app works perfectly without iCloud. You will only lose synchronization of your preferences and custom links between devices.</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-item">
-                    <h3 class="faq-question">Why does the app request access to my data?</h3>
+                    <h3 class="faq-question">Why does the app request access to my Calendar and Reminders?</h3>
                     <div class="faq-answer">
-                        <p>MyDay requests access to display your Activity data, Photos, Calendars, and Reminders to organize your day. These permissions are necessary for the app to function properly, but your data always remains private.</p>
+                        <p>These two permissions are necessary for the app to function. A detailed explanation is shown before each request. Regarding Calendar, iOS does not offer read-only access — MyDay will never create, modify, or delete any event.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">Why aren't Photos and Health requested at launch?</h3>
+                    <div class="faq-answer">
+                        <p>These features are entirely optional. You enable them yourself in Settings, only if you want to. A clear explanation is shown before each permission so you can make an informed decision.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">Is the quote of the day translated?</h3>
+                    <div class="faq-answer">
+                        <p>Yes. If your device is set to a language other than English, the quote is automatically translated before being displayed. No English version will appear.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">How do I change my zodiac sign or horoscope source?</h3>
+                    <div class="faq-answer">
+                        <p>In Settings → Horoscope configuration, you can change your sign and choose from the available sources. The source in use is indicated below each horoscope displayed.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">What are custom links?</h3>
+                    <div class="faq-answer">
+                        <p>Custom links let you associate a Shortcuts action with an event or reminder in your agenda. For example, a tap on "Zoom Meeting" can directly open your Zoom link. A 🔗 icon appears next to items that have an associated link.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">What does the 👥 icon next to an event mean?</h3>
+                    <div class="faq-answer">
+                        <p>This icon indicates that the event or reminder comes from a shared calendar or list (e.g. "Family", "Team", "Couple"). It lets you quickly distinguish your personal commitments from those shared with other people.</p>
                     </div>
                 </div>
             </div>
@@ -203,30 +273,37 @@
             <h2 class="section-title">Privacy Policy</h2>
             <div class="privacy-content">
                 <h3>Our Commitment</h3>
-                <p>At MyDay, your privacy is our top priority. We designed our app with privacy by design principles.</p>
-                
+                <p>At MyDay, your privacy is our top priority. We designed our app with privacy by design principles. Every permission is explained before being requested.</p>
+
                 <h3>Data Collection</h3>
-                <p>We collect NO personal data. The app only accesses information you choose to share (HealthKit, Photos, Calendars, Reminders) and this data remains exclusively on your devices.</p>
-                
+                <p>We collect NO personal data. The app only accesses information you choose to share (Calendars, Reminders, and optionally HealthKit and Photos) and this data remains exclusively on your devices.</p>
+
+                <h3>Permissions Requested</h3>
+                <p><strong>On first launch:</strong> Calendar and Reminders — necessary to display your agenda. An explanation is provided before each request.<br>
+                <strong>On demand (in Settings):</strong> Photos and Health data — only if you decide to enable them. None of these permissions are required to use the app.</p>
+
+                <h3>What the app does not do</h3>
+                <p>MyDay never creates, modifies, or deletes any event or reminder. It never modifies any Health data. It never uploads or transfers your photos to our servers (we have none).</p>
+
                 <h3>Data Storage</h3>
                 <p>All data is stored locally on your device and, if you enable it, synchronized through your personal iCloud account. We have no access to your information.</p>
-                
+
                 <h3>Third-Party Sharing</h3>
                 <p>We do not share, sell, or transmit your data to any third parties. Ever.</p>
-                
+
                 <h3>Third-Party Services</h3>
-                <p>MyDay does not use any analytics, advertising, or third-party tracking services. The app contains no trackers.</p>
-                
+                <p>MyDay does not use any analytics, advertising, or third-party tracking services. The app contains no trackers. The quote of the day and horoscope sources are read-only third-party APIs — no personal data is sent to them.</p>
+
                 <h3>Your Rights</h3>
                 <p>You have full control over your data. You can revoke access permissions at any time in iOS settings. Deleting the app erases all local data.</p>
-                
+
                 <h3>Policy Changes</h3>
                 <p>Any changes to this policy will be communicated through an app update and published on this page.</p>
-                
+
                 <h3>Contact</h3>
                 <p>For any privacy-related questions, contact us through the Support section below.</p>
-                
-                <p><em>Last updated: January 2026</em></p>
+
+                <p><em>Last updated: February 2026</em></p>
             </div>
         </div>
     </section>
@@ -237,20 +314,20 @@
             <h2 class="section-title">Support & Contact</h2>
             <div class="support-content">
                 <p>Need help? Have a question? We're here to assist you.</p>
-                
+
                 <div class="contact-options">
                     <div class="contact-card">
                         <h3>📧 Email</h3>
                         <p>Contact us by email for any questions or issues</p>
                         <a href="mailto:clic-reverence-2s@icloud.com">support</a>
                     </div>
-                    
+
                     <div class="contact-card">
                         <h3>💬 Feedback</h3>
                         <p>Share your ideas and suggestions to improve the app</p>
                         <a href="mailto:clic-reverence-2s@icloud.com">feedback</a>
                     </div>
-                    
+
                     <div class="contact-card">
                         <h3>🐛 Report a Bug</h3>
                         <p>Found a problem? Help us make it better</p>
