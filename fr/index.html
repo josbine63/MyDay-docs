@@ -21,6 +21,7 @@
             <ul class="nav-menu">
                 <li><a href="#features">Fonctionnalités</a></li>
                 <li><a href="#guide">Guide</a></li>
+                <li><a href="#custom-links">Liens personnalisés</a></li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#privacy">Confidentialité</a></li>
                 <li><a href="#support">Support</a></li>
@@ -197,6 +198,118 @@
                         <p>Si vous utilisez plusieurs appareils Apple, assurez-vous que iCloud est activé pour synchroniser vos préférences et liens personnalisés automatiquement.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Links Section -->
+    <section id="custom-links" class="guide" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title">Guide des liens personnalisés</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; color: #666;">
+                Les liens personnalisés vous permettent d'associer des raccourcis Shortcuts à vos événements et rappels.
+                Un simple tap sur votre agenda déclenche instantanément l'action souhaitée.
+            </p>
+
+            <div class="guide-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Créez un raccourci dans l'app Shortcuts</h3>
+                        <p>Ouvrez l'app <strong>Shortcuts</strong> sur votre iPhone et créez un nouveau raccourci. Par exemple :</p>
+                        <ul style="margin-top: 0.5rem;">
+                            <li><strong>Ouvrir Zoom</strong> : Action "Ouvrir les URLs" avec votre lien de réunion</li>
+                            <li><strong>Appeler</strong> : Action "Recevoir du texte" puis "Appeler [Texte d'entrée]"</li>
+                            <li><strong>Navigation</strong> : Action "Obtenir les directions vers [Adresse]"</li>
+                            <li><strong>Musique</strong> : Action "Lire la playlist [Nom]"</li>
+                        </ul>
+                        <p style="margin-top: 1rem;"><em>💡 Astuce : Pour recevoir des paramètres, ajoutez l'action "Recevoir du texte" au début de votre raccourci.</em></p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Configurez le lien dans MyDay</h3>
+                        <p>Dans MyDay, allez dans <strong>Réglages → Liens personnalisés</strong> :</p>
+                        <ol style="margin-top: 0.5rem;">
+                            <li>Appuyez sur le bouton <strong>+</strong></li>
+                            <li>Entrez le <strong>Mot-clé</strong> qui apparaît dans vos événements (ex: "Zoom", "Appeler", "Gym")</li>
+                            <li>Choisissez votre <strong>Raccourci</strong> dans la liste</li>
+                            <li>Sauvegardez</li>
+                        </ol>
+                        <p style="margin-top: 1rem;"><em>💡 Le mot-clé doit correspondre exactement au début du titre de vos événements (non sensible à la casse).</em></p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Utilisez le lien dans votre agenda</h3>
+                        <p>Créez un événement ou rappel dont le titre commence par votre mot-clé. Une icône 🔗 apparaîtra automatiquement à côté de l'élément.</p>
+                        <p style="margin-top: 1rem;"><strong>Exemples :</strong></p>
+                        <ul style="margin-top: 0.5rem;">
+                            <li><strong>"Zoom réunion équipe"</strong> → Mot-clé : "Zoom" → Ouvre votre lien Zoom</li>
+                            <li><strong>"Gym séance cardio"</strong> → Mot-clé : "Gym" → Lance votre playlist d'entraînement</li>
+                            <li><strong>"Rappel prendre médicaments"</strong> → Mot-clé : "Rappel" → Ouvre l'app Santé</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Passez des paramètres à votre raccourci</h3>
+                        <p>Utilisez le format <strong>Mot-clé : paramètre</strong> dans le titre de votre événement pour transmettre des informations au raccourci.</p>
+                        <p style="margin-top: 1rem;"><strong>Exemples avancés :</strong></p>
+                        <ul style="margin-top: 0.5rem;">
+                            <li><strong>"Appeler : Marie"</strong> → Le raccourci reçoit "Marie" en entrée</li>
+                            <li><strong>"Navigation : 123 rue Example"</strong> → Le raccourci reçoit l'adresse</li>
+                            <li><strong>"Email : Rapport mensuel"</strong> → Le raccourci reçoit le sujet</li>
+                            <li><strong>"Message : Salut"</strong> → Le raccourci reçoit le texte du message</li>
+                        </ul>
+                        <p style="margin-top: 1rem;"><em>⚠️ Important : Votre raccourci doit contenir l'action "Recevoir du texte" pour exploiter le paramètre.</em></p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Exemples de cas d'usage</h3>
+                        <div style="margin-top: 1rem;">
+                            <p><strong>🎯 Réunions virtuelles</strong><br>
+                            Mot-clé : "Zoom" → Raccourci qui ouvre votre lien Zoom personnel<br>
+                            <em>Titre événement : "Zoom standup quotidien"</em></p>
+
+                            <p style="margin-top: 1rem;"><strong>📞 Appels rapides</strong><br>
+                            Mot-clé : "Appeler" → Raccourci avec "Recevoir du texte" puis "Appeler [contact]"<br>
+                            <em>Titre événement : "Appeler : Docteur Dupont"</em></p>
+
+                            <p style="margin-top: 1rem;"><strong>🚗 Navigation</strong><br>
+                            Mot-clé : "Aller" → Raccourci avec "Recevoir du texte" puis "Obtenir directions"<br>
+                            <em>Titre événement : "Aller : 123 rue de Paris, Montréal"</em></p>
+
+                            <p style="margin-top: 1rem;"><strong>💊 Santé</strong><br>
+                            Mot-clé : "Médicament" → Raccourci qui ouvre l'app Santé ou journal médical<br>
+                            <em>Titre rappel : "Médicament aspirine"</em></p>
+
+                            <p style="margin-top: 1rem;"><strong>🎵 Musique contextuelle</strong><br>
+                            Mot-clé : "Gym" → Raccourci qui lance votre playlist d'entraînement<br>
+                            <em>Titre événement : "Gym entraînement"</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: white; padding: 2rem; border-radius: 12px; margin-top: 3rem; border-left: 4px solid #007AFF;">
+                <h3 style="margin-top: 0;">💡 Astuces avancées</h3>
+                <ul style="margin-bottom: 0;">
+                    <li><strong>Synchronisation iCloud</strong> : Vos liens personnalisés se synchronisent automatiquement sur tous vos appareils Apple.</li>
+                    <li><strong>Modification rapide</strong> : Appuyez longuement sur un lien existant pour le modifier ou le supprimer.</li>
+                    <li><strong>Icône 🔗</strong> : Cette icône apparaît uniquement si le mot-clé est trouvé au début du titre de l'événement.</li>
+                    <li><strong>Ordre d'exécution</strong> : Les mots-clés sont vérifiés du plus long au plus court pour éviter les conflits.</li>
+                    <li><strong>Test rapide</strong> : Créez un événement test pour vérifier que votre lien fonctionne avant de l'utiliser sur des événements récurrents.</li>
+                </ul>
             </div>
         </div>
     </section>

@@ -21,6 +21,7 @@
             <ul class="nav-menu">
                 <li><a href="#features">Features</a></li>
                 <li><a href="#guide">Guide</a></li>
+                <li><a href="#custom-links">Custom Links</a></li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#privacy">Privacy</a></li>
                 <li><a href="#support">Support</a></li>
@@ -197,6 +198,118 @@
                         <p>If you use multiple Apple devices, make sure iCloud is enabled to automatically sync your preferences and custom links.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Links Section -->
+    <section id="custom-links" class="guide" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title">Custom Links Guide</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; color: #666;">
+                Custom links allow you to associate Shortcuts with your events and reminders.
+                A simple tap on your agenda instantly triggers the desired action.
+            </p>
+
+            <div class="guide-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Create a shortcut in the Shortcuts app</h3>
+                        <p>Open the <strong>Shortcuts</strong> app on your iPhone and create a new shortcut. For example:</p>
+                        <ul style="margin-top: 0.5rem;">
+                            <li><strong>Open Zoom</strong>: "Open URLs" action with your meeting link</li>
+                            <li><strong>Call</strong>: "Receive Text" action then "Call [Input Text]"</li>
+                            <li><strong>Navigation</strong>: "Get Directions to [Address]" action</li>
+                            <li><strong>Music</strong>: "Play Playlist [Name]" action</li>
+                        </ul>
+                        <p style="margin-top: 1rem;"><em>💡 Tip: To receive parameters, add the "Receive Text" action at the beginning of your shortcut.</em></p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Configure the link in MyDay</h3>
+                        <p>In MyDay, go to <strong>Settings → Custom Links</strong>:</p>
+                        <ol style="margin-top: 0.5rem;">
+                            <li>Tap the <strong>+</strong> button</li>
+                            <li>Enter the <strong>Keyword</strong> that appears in your events (e.g., "Zoom", "Call", "Gym")</li>
+                            <li>Choose your <strong>Shortcut</strong> from the list</li>
+                            <li>Save</li>
+                        </ol>
+                        <p style="margin-top: 1rem;"><em>💡 The keyword must match exactly the beginning of your event titles (case insensitive).</em></p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Use the link in your agenda</h3>
+                        <p>Create an event or reminder whose title starts with your keyword. A 🔗 icon will automatically appear next to the item.</p>
+                        <p style="margin-top: 1rem;"><strong>Examples:</strong></p>
+                        <ul style="margin-top: 0.5rem;">
+                            <li><strong>"Zoom team meeting"</strong> → Keyword: "Zoom" → Opens your Zoom link</li>
+                            <li><strong>"Gym cardio session"</strong> → Keyword: "Gym" → Launches your workout playlist</li>
+                            <li><strong>"Reminder take medication"</strong> → Keyword: "Reminder" → Opens Health app</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Pass parameters to your shortcut</h3>
+                        <p>Use the format <strong>Keyword : parameter</strong> in your event title to pass information to the shortcut.</p>
+                        <p style="margin-top: 1rem;"><strong>Advanced examples:</strong></p>
+                        <ul style="margin-top: 0.5rem;">
+                            <li><strong>"Call : Marie"</strong> → The shortcut receives "Marie" as input</li>
+                            <li><strong>"Navigate : 123 Example Street"</strong> → The shortcut receives the address</li>
+                            <li><strong>"Email : Monthly Report"</strong> → The shortcut receives the subject</li>
+                            <li><strong>"Message : Hello"</strong> → The shortcut receives the message text</li>
+                        </ul>
+                        <p style="margin-top: 1rem;"><em>⚠️ Important: Your shortcut must contain the "Receive Text" action to use the parameter.</em></p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Use case examples</h3>
+                        <div style="margin-top: 1rem;">
+                            <p><strong>🎯 Virtual meetings</strong><br>
+                            Keyword: "Zoom" → Shortcut that opens your personal Zoom link<br>
+                            <em>Event title: "Zoom daily standup"</em></p>
+
+                            <p style="margin-top: 1rem;"><strong>📞 Quick calls</strong><br>
+                            Keyword: "Call" → Shortcut with "Receive Text" then "Call [contact]"<br>
+                            <em>Event title: "Call : Dr. Smith"</em></p>
+
+                            <p style="margin-top: 1rem;"><strong>🚗 Navigation</strong><br>
+                            Keyword: "Go" → Shortcut with "Receive Text" then "Get Directions"<br>
+                            <em>Event title: "Go : 123 Paris Street, Montreal"</em></p>
+
+                            <p style="margin-top: 1rem;"><strong>💊 Health</strong><br>
+                            Keyword: "Medication" → Shortcut that opens Health app or medical journal<br>
+                            <em>Reminder title: "Medication aspirin"</em></p>
+
+                            <p style="margin-top: 1rem;"><strong>🎵 Contextual music</strong><br>
+                            Keyword: "Gym" → Shortcut that launches your workout playlist<br>
+                            <em>Event title: "Gym training"</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: white; padding: 2rem; border-radius: 12px; margin-top: 3rem; border-left: 4px solid #007AFF;">
+                <h3 style="margin-top: 0;">💡 Advanced tips</h3>
+                <ul style="margin-bottom: 0;">
+                    <li><strong>iCloud sync</strong>: Your custom links automatically sync across all your Apple devices.</li>
+                    <li><strong>Quick edit</strong>: Long press on an existing link to edit or delete it.</li>
+                    <li><strong>🔗 icon</strong>: This icon appears only if the keyword is found at the beginning of the event title.</li>
+                    <li><strong>Execution order</strong>: Keywords are checked from longest to shortest to avoid conflicts.</li>
+                    <li><strong>Quick test</strong>: Create a test event to verify your link works before using it on recurring events.</li>
+                </ul>
             </div>
         </div>
     </section>
